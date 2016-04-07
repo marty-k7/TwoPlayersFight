@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1C49171CB51FDD004BE9AF /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C49131CB51FDD004BE9AF /* background.wav */; };
+		1C1C49181CB51FDD004BE9AF /* soldier.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C49141CB51FDD004BE9AF /* soldier.wav */; };
+		1C1C49191CB51FDD004BE9AF /* orc.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C49151CB51FDD004BE9AF /* orc.wav */; };
+		1C1C491A1CB51FDD004BE9AF /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C49161CB51FDD004BE9AF /* death.wav */; };
 		90EC156A1CB303C700B185FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC15691CB303C700B185FC /* AppDelegate.swift */; };
 		90EC156C1CB303C700B185FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC156B1CB303C700B185FC /* ViewController.swift */; };
 		90EC156F1CB303C700B185FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EC156D1CB303C700B185FC /* Main.storyboard */; };
@@ -14,6 +18,7 @@
 		90EC15741CB303C700B185FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90EC15721CB303C700B185FC /* LaunchScreen.storyboard */; };
 		90EC157F1CB303C700B185FC /* TwoPlayersFightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC157E1CB303C700B185FC /* TwoPlayersFightTests.swift */; };
 		90EC158A1CB303C800B185FC /* TwoPlayersFightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC15891CB303C800B185FC /* TwoPlayersFightUITests.swift */; };
+		90EC15981CB3043D00B185FC /* Character .swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EC15971CB3043D00B185FC /* Character .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1C49131CB51FDD004BE9AF /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		1C1C49141CB51FDD004BE9AF /* soldier.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soldier.wav; sourceTree = "<group>"; };
+		1C1C49151CB51FDD004BE9AF /* orc.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = orc.wav; sourceTree = "<group>"; };
+		1C1C49161CB51FDD004BE9AF /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		90EC15661CB303C700B185FC /* TwoPlayersFight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoPlayersFight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EC15691CB303C700B185FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90EC156B1CB303C700B185FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 		90EC15851CB303C800B185FC /* TwoPlayersFightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoPlayersFightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EC15891CB303C800B185FC /* TwoPlayersFightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayersFightUITests.swift; sourceTree = "<group>"; };
 		90EC158B1CB303C800B185FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90EC15971CB3043D00B185FC /* Character .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Character .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				90EC15701CB303C700B185FC /* Assets.xcassets */,
 				90EC15721CB303C700B185FC /* LaunchScreen.storyboard */,
 				90EC15751CB303C700B185FC /* Info.plist */,
+				90EC15971CB3043D00B185FC /* Character .swift */,
+				1C1C49131CB51FDD004BE9AF /* background.wav */,
+				1C1C49141CB51FDD004BE9AF /* soldier.wav */,
+				1C1C49151CB51FDD004BE9AF /* orc.wav */,
+				1C1C49161CB51FDD004BE9AF /* death.wav */,
 			);
 			path = TwoPlayersFight;
 			sourceTree = "<group>";
@@ -231,6 +246,10 @@
 			files = (
 				90EC15741CB303C700B185FC /* LaunchScreen.storyboard in Resources */,
 				90EC15711CB303C700B185FC /* Assets.xcassets in Resources */,
+				1C1C49181CB51FDD004BE9AF /* soldier.wav in Resources */,
+				1C1C49191CB51FDD004BE9AF /* orc.wav in Resources */,
+				1C1C49171CB51FDD004BE9AF /* background.wav in Resources */,
+				1C1C491A1CB51FDD004BE9AF /* death.wav in Resources */,
 				90EC156F1CB303C700B185FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +277,7 @@
 			files = (
 				90EC156C1CB303C700B185FC /* ViewController.swift in Sources */,
 				90EC156A1CB303C700B185FC /* AppDelegate.swift in Sources */,
+				90EC15981CB3043D00B185FC /* Character .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +502,7 @@
 				90EC15901CB303C800B185FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90EC15911CB303C800B185FC /* Build configuration list for PBXNativeTarget "TwoPlayersFightTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +511,7 @@
 				90EC15931CB303C800B185FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90EC15941CB303C800B185FC /* Build configuration list for PBXNativeTarget "TwoPlayersFightUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				90EC15961CB303C800B185FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
