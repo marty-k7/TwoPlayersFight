@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     var enemySound: AVAudioPlayer!
     var deathSound: AVAudioPlayer!
     
+    var timer: NSTimer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,6 +128,9 @@ class ViewController: UIViewController {
             playerHpLbl.text = ""
             playerImg.hidden = true
             endGame()
+            timer.invalidate()
+            
+            
            
         }
     
@@ -149,9 +154,10 @@ class ViewController: UIViewController {
             printLbl.text = "\(player1.name) just killed \(enemy1.name)"
             enemyHpLbl.text = ""
             enemyImg.hidden = true
+            //timer.invalidate()
             endGame()
     
-            //bouthBtnsDisabled()
+            
             
         }
     }
@@ -168,17 +174,21 @@ class ViewController: UIViewController {
         playerAttackBtn.hidden = false
         enemyAttackBtn.hidden = false
         restartBtn.hidden = true
-        //bouthBtnsEnabled()
+        bouthBtnsEnabled()
         printLbl.text = "Press attack to start"
         
         
         
     }
     func endGame() {
-        enmAttBtnLbl.hidden = true
-        plrAttBtnLbl.hidden = true
-        enemyAttackBtn.hidden = true
-        playerAttackBtn.hidden = true
+//        enmAttBtnLbl.hidden = true
+//        plrAttBtnLbl.hidden = true
+//        enemyAttackBtn.hidden = true
+////        playerAttackBtn.hidden = true
+//        if timer != nil {
+//          timer.invalidate()
+//        }
+      //  bouthBtnsDisabled()
         restartBtn.hidden = false
         deathSoundPlay()
     }
@@ -187,12 +197,12 @@ class ViewController: UIViewController {
 //    func bouthBtnsDisabled() {
 //        playerAttackBtn.enabled = false
 //        enemyAttackBtn.enabled = false
-//        
-//    }
-//    func bouthBtnsEnabled()  {
-//        playerAttackBtn.enabled = true
-//        enemyAttackBtn.enabled = true
-//    }
+    
+   // }
+    func bouthBtnsEnabled()  {
+        playerAttackBtn.enabled = true
+        enemyAttackBtn.enabled = true
+    }
     
     func enableButton(timer:NSTimer) {
         
@@ -205,7 +215,10 @@ class ViewController: UIViewController {
             
         btn.enabled = false
         
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "enableButton:", userInfo: btn, repeats: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "enableButton:", userInfo: btn, repeats: false)
+        if !player1.isAlive || !enemy1.isAlive == true {
+            timer.invalidate()
+        }
         
     }
     
